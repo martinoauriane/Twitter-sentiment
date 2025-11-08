@@ -1,10 +1,10 @@
 # Twitter-sentiment
 
-![alt](./twitter.jpg)
+Let's ty to analyze the emotions of a tweet to determine whether it's on the overall neutral, positive or negative.
 
-Try to analyze the emotions of a tweet to determine whether it's on the overall neutral, positive or negative
+![alt](allo.jpg)
 
-Stack
+## Stack
 
 Python
 
