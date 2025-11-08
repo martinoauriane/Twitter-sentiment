@@ -14,8 +14,6 @@ sentiment_pipeline = pipeline(
 df = pd.read_csv('./Tweets.csv')
 df = df.dropna(subset=['text']) ## droping undefined values
 df['CLEANEDTWEETS']=''
-df['SENTIMENT']=0
-
 
 ## STEP 2: CLEAN TWEET
 def cleanTweet(tweet):
