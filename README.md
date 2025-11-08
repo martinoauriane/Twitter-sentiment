@@ -24,6 +24,8 @@ bash launch.sh
 
 First, we collect, the data that interest us via a csv file. Then, we use the library Pandas to get an exploitable array, a DataFrame.
 
+Panda is a software library useful for data manipulation and data analysis. DataFrame is a useful data structure that allows to visualize and manipulate complex data easily.
+
 ## Assessing sentiment with transformers library
 
 After having cleaned our DataFrame, using the likes of a cleanTweet function and dropping undefined values, we use the transformers library to affect a score to every tweet.
@@ -32,7 +34,7 @@ After having cleaned our DataFrame, using the likes of a cleanTweet function and
 
 Transformers is powerful Python library created by Hugging Face that allows you to use open-source AI models. In our case it's a helpful use, as we need AI to analyze the sentiment of a tweet. We could have used TextBlob instead of Transformers, but the result would not have been the same. Text blob doesn't use AI model to infer sentiment. While it's more CPU friendly, it's clearly not as accurate. The main issue is it doesn't really understand context.
 
-For example, accordint to the context of the sentence, "good" can either be positive or negative. For example, we humans know that "It was not good" is a negative tweet. However, Text Blob would simply tokenize this sentence and attribute a score to each world. "not" and "good" would end up giving a pretty neutral score to this sentence, while we humans clearly know it's a negative tweet. Hence the use of NLP AI.
+For example, according to the context of the sentence, "good" can either be positive or negative. For example, we humans know that "It was not good" is a negative tweet. However, Text Blob would simply tokenize this sentence and attribute a score to each world. "not" and "good" would end up giving a pretty neutral score to this sentence, while we humans clearly know it's a negative tweet. Hence the use of NLP AI.
 
 ## Statistics vizualisation
 
